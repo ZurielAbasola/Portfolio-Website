@@ -1,24 +1,55 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-600 to-purple-600 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1
+            className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-600 
+                        to-purple-600 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold"
+          >
             <span className="text-black">Hello, I'm </span>
-            Zuriel
+            <TypeAnimation
+              sequence={[
+                "Zuriel Abasola",
+                2000,
+                "a Full-Stack Developer",
+                2000,
+                "a Web Developer",
+                2000,
+                "a Software Engineer",
+                2000,
+              ]}
+              wrapper="span"
+              speed={500}
+              style={{
+                fontsize: "inherit",
+                display: "inline-block",
+                color: "inherit",
+              }}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#272727] text-lg sm:text-lg mb-6 lg:text-xl">
             I'm a full-stack developer with a passion for building beautiful and
             functional web applications.
           </p>
           <div>
-            <button className="px-6 py-3 rounded-full w-full sm:w-fit hover:bg-gradient-to-tr hover:from-blue-900 hover:via-blue-600 hover:to-purple-600 mr-4 bg-black text-white font-bold border-transparent">
+            <button
+              className="px-6 py-3 rounded-full w-full sm:w-fit hover:bg-gradient-to-tr hover:from-blue-900 
+                            hover:via-blue-600 hover:to-purple-600 mr-4 bg-black text-white border-transparent"
+            >
               Hire Me
             </button>
-            <button className="px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-300 text-black border border-black mt-3 hover:bg-gradient-to-tr hover:from-blue-900 hover:via-blue-600 hover:to-purple-600 hover:border-transparent hover:text-white">
+            <button
+              className="px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-300 
+                                text-black border border-black mt-3 hover:bg-gradient-to-tr hover:from-blue-900 
+                                hover:via-blue-600 hover:to-purple-600 hover:border-transparent hover:text-white"
+            >
               Download Resume
             </button>
           </div>
