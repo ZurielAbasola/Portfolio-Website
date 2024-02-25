@@ -16,21 +16,23 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Zuriel Abasola",
-                2000,
+                1000,
                 "a Full-Stack Developer",
-                2000,
+                1000,
                 "a Web Developer",
-                2000,
+                1000,
                 "a Software Engineer",
-                2000,
+                1000,
               ]}
               wrapper="span"
               speed={500}
+              deletionSpeed={1}
               style={{
                 fontsize: "inherit",
                 display: "inline-block",
                 color: "inherit",
               }}
+              cursor={true}
               repeat={Infinity}
             />
           </h1>
