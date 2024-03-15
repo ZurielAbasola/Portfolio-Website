@@ -110,6 +110,7 @@ const HeroSection = () => {
                         to-purple-600 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold"
           >
             <span className="text-black">Hello, I'm </span>
+            <br />
             <TypeAnimation
               sequence={[
                 "Zuriel Abasola",

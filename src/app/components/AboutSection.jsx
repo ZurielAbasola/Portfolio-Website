@@ -10,6 +10,7 @@ function AboutSection() {
           alt="about"
           width={540}
           height={540}
+          className="rounded-lg shadow-xl md:object-cover md:object-center md:h-80 z-10"
         />
         <div>
           <h2 className="text-4xl font-bold text-black mb-4">About Me</h2>
