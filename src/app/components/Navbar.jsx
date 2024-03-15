@@ -28,7 +28,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-black bg-opacity-90">
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-black bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
@@ -40,14 +40,14 @@ const Navbar = () => {
           {!menuOpen ? (
             <button
               onClick={() => setMenuOpen(true)}
-              className="flex items-center px-3 py-2 pl-3 pr-4 border text-white rounded md:p-0 hover:text-blue-700 hover:border-blue-700"
+              className="flex items-center px-3 py-2 border text-white rounded md:p-0 hover:text-blue-700 hover:border-blue-700"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setMenuOpen(false)}
-              className="flex items-center px-3 py-2 pl-3 pr-4 border text-white rounded md:p-0 hover:text-blue-700 hover:border-blue-700"
+              className="flex items-center px-3 py-2 border text-white rounded md:p-0 hover:text-blue-700 hover:border-blue-700"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>

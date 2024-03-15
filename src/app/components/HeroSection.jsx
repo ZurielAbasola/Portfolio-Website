@@ -101,10 +101,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section>
+    <section className="lg:py-16">
       {loadParticle()}
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="lg:col-span-7 place-self-center text-center sm:text-left">
+        <div className="lg:col-span-8 place-self-center text-center sm:text-left justify-self-start">
           <h1
             className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-600 
                         to-purple-600 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold"
@@ -152,7 +152,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] relative overflow-hidden">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
             <Image
               src="/images/image.png"
               alt="Hero Image"
